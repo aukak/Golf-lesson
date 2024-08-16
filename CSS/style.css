@@ -1,0 +1,59 @@
+*{
+    font-family: 'Lilita One';
+    font-style: normal;
+    font-weight: bold;
+    color: white;
+  
+}
+nav{
+    background-color: black;
+    margin: -19px;
+    padding: 2px;
+}
+nav ul .items{
+    display: inline-flex;
+    flex-direction: row;
+    
+}
+
+.items li{
+    padding: 20px;
+    list-style: none;
+    
+    color: white;
+    font-size: 28px;
+}
+.searchbar{
+    display: inline-flex;
+    margin: 0px;
+    width: 995px;
+    justify-items: right;
+    justify-content: right;
+    
+
+}
+li a{
+    text-decoration: none;
+
+}
+li a:hover{
+    color: red;
+}
+input{
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 8px 9px;
+    color: black;
+    
+}
+ul button{
+    padding: 8px 14px;
+    border: 2px solid;
+    border-radius: 8px;
+    color: black;
+}
+
+ul button:hover{
+    cursor: pointer;
+   
+}
