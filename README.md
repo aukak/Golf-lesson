@@ -1,0 +1,2 @@
+hi. bad website
+bye
