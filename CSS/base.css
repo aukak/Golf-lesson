@@ -1,9 +1,9 @@
-body {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: #000000;
-  margin: 0;
-  padding: 0;
-  overscroll-behavior: none;
+#particles-js{ 
+  width: 100%; 
+  height: 100%; 
+  background-size: cover;
+  background-position: 50% 50%; 
+  position: fixed; 
+  top: 0px; 
+  z-index:1; 
 }
