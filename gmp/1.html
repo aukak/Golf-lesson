@@ -10,16 +10,29 @@
   <script src="/particles.js"></script>
   <script src="/app.js"></script>
 </head>
-</head>
 <body>
 <div id="particles-js"></div>
- <h1>Golf  <span style="color: green;">Lessons</span></h1>
- <p>motd: skibidi minion</p>
-
+ <h1>1</h1>
  <main>
-  <button role="button" onclick="window.location.href='/games.html'">Games</button>
-  <button role="button" onclick="window.location.href='/apps.html'">Apps</button>
-  <button role="button" onclick="window.location.href='/settings.html'">Settings</button>
+    <button id="fullscreen" role="button">Fullscreen</button>
  </main>
+ <main>
+    <iframe src="/gmf/1/index.html"></iframe>
+ </main>
+ <script>
+    document.getElementById('fullscreen').addEventListener('click', function() {
+        var iframe = document.querySelector('iframe');
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { 
+            iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+        }
+    });
+</script>
+
 </body>
 </html>
