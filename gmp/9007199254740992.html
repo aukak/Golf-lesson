@@ -1,0 +1,39 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/heading.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/assets/images/iconfavicon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="/particles.js"></script>
+  <script src="/app.js"></script>
+</head>
+<body>
+<div id="particles-js"></div>
+ <h1>9007199254740992</h1>
+ <main>
+    <button id="fullscreen" role="button">Fullscreen</button>
+    <button role="button" onclick="window.location.href='/index.html'">Home</button>
+ </main>
+ <main>
+    <iframe src="/gmf/9007199254740992/index.html"></iframe>
+ </main>
+ <script>
+    document.getElementById('fullscreen').addEventListener('click', function() {
+        var iframe = document.querySelector('iframe');
+        if (iframe.requestFullscreen) {
+            iframe.requestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+            iframe.mozRequestFullScreen();
+        } else if (iframe.webkitRequestFullscreen) { 
+            iframe.webkitRequestFullscreen();
+        } else if (iframe.msRequestFullscreen) {
+            iframe.msRequestFullscreen();
+        }
+    });
+</script>
+
+</body>
+</html>
